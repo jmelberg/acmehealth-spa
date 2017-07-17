@@ -1,27 +1,11 @@
-<div class="AppBody">
-  <div class="Wrap">
-    <h1 class="AppLogo--stacked"></h1>
-      
-    <form id="LoginForm">
-      <div class="FormField">
-        <input type="text" placeholder="Username" ng-model="user.email">
-      </div>
-      <div class="FormField">
-        <input type="password" placeholder="Password" ng-model="user.password">
-      </div>
-      <div class="FormField--checkbox">
-        <input type="checkbox" name="remember_me" id="remember_me">
-        <label for="remember_me">Remember me</label>
-      </div>
-      
-      <div class="FormField--submit">
-        <p>
-          <button class="Button--large Button--white" ng-click="authenticate(user)">Sign in</button>
-        </p>
-        <ul>
-          <li><a href="#">Need Help?</a></li>
-        </ul>
-      </div>
-    </form>
-  </div>
-</div>
+<link
+  href="https://ok1static.oktacdn.com/assets/js/sdk/okta-signin-widget/1.13.0/css/okta-sign-in.min.css"
+  type="text/css"
+  rel="stylesheet"/>
+
+<link
+  href="https://ok1static.oktacdn.com/assets/js/sdk/okta-signin-widget/1.11.0/css/okta-theme.css"
+  type="text/css"
+  rel="stylesheet"/>
+
+<div id="widget-container"></div>
