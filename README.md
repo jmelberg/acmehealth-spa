@@ -4,11 +4,11 @@ Single Page Application for API Access Management to be demonstrated at Oktane 2
 ```sh
 [acmehealth-spa]$ npm install
 [acmehealth-spa]$ npm start
-``
+```
 
 **[Navigate](http://localhost:8080/)** to `http://localhost:8080/` to sign in.
 
-####Update the `oktaconfig.js` file:
+#### Update the `oktaconfig.js` file:
 
 ```javascript
 angular
