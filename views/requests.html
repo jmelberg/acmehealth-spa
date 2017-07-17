@@ -12,8 +12,8 @@
       </nav>
       
       <div class="UserMenu">
-        <div class="UserMenu-avatar">
-          <img src="{{idToken.claims.picture}}">
+        <div class="UserMenu-avatar" ng-if="idToken">
+          <img src="https://randomuser.me/api/portraits/thumb/men/1.jpg" />
         </div>
         
         <a class="UserMenu-name" ng-click="signout()">{{idToken.claims.name}}</a>

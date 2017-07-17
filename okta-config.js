@@ -1,16 +1,3 @@
-# acmehealth-spa
-Single Page Application for API Access Management to be demonstrated at Oktane 2016.
-## Build Instructions
-```sh
-[acmehealth-spa]$ npm install
-[acmehealth-spa]$ npm start
-``
-
-**[Navigate](http://localhost:8080/)** to `http://localhost:8080/` to sign in.
-
-####Update the `oktaconfig.js` file:
-
-```javascript
 angular
 .module('OktaConfig', [])
 .constant('OKTACONFIG', {
@@ -30,6 +17,3 @@ angular
     'appointments:confirm'
   ]
 });
-
-```
-
