@@ -29,6 +29,7 @@ app.controller('RequestsController',
 
     /** Get current idToken */
     $scope.idToken = tokenManager.get('idToken');
+    $scope.accessToken = tokenManager.get('accessToken');
 
     getRequests();
 

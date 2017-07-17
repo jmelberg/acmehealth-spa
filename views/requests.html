@@ -44,21 +44,12 @@
         
         </div>
 
-        <!-- // Provider view -->
-        <div class="AppointmentCard-actions" ng-show="idToken.claims.groups.indexOf('Providers') >= 0">
-          <a class="Button--greenOutline" href="#">Suggest new time</a>
-          <a class="Button--green" ng-click="confirmAppointment(req)">Confirm</a>
-          <a class="Button--gray" ng-click="cancelAppointment(req)">Cancel</a>
+        <div class="AppointmentCard-actions" ng-show="accessToken.scopes.indexOf('appointments:read') >= 0">
+          <a class="Button--greenOutline" ng-show="accessToken.scopes.indexOf('appointments:edit') >= 0" href="#">Suggest new time</a>
+          <a class="Button--green" ng-show="accessToken.scopes.indexOf('appointments:confirm') >= 0" ng-click="confirmAppointment(req)">Confirm</a>
+          <a class="Button--gray" ng-show="accessToken.scopes.indexOf('appointments:cancel') >= 0" ng-click="cancelAppointment(req)">Cancel</a>
         </div>
 
-        <!-- // Patient view -->
-        <div class="AppointmentCard-actions" ng-show="idToken.claims.groups.indexOf('Patients') >= 0">
-          <a class="Button--gray" ng-click="deleteAppointment(req)">Cancel</a>
-        </div>
-
-        <!-- // Read-only view -->
-        <div class="AppointmentCard-actions" ng-show="idToken.claims.groups.indexOf('Providers-read-only') >= 0">
-        </div>
       </div>
     </div>
   </div>
