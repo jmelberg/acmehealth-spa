@@ -1,14 +1,18 @@
 # acmehealth-spa
-Single Page Application for API Access Management to be demonstrated at Oktane 2016.
-## Build Instructions
-```sh
+
+This is an Angular-based Single Page Application designed to work with the [AcmeHealth Server](https://github.com/jmelberg/acmehealth-server) to demonstrate the Okta API Access Management product. An earlier version was demonstrated on stage at Oktane 2016.
+
+## Project Setup In a Nutshell
+
+### Clone Repository
+```$ git clone git@github.com:jmelberg/acmehealth-spa.git```
+  
+### Install the Project
 [acmehealth-spa]$ npm install
-[acmehealth-spa]$ npm start
-```
 
-**[Navigate](http://localhost:8080/)** to `http://localhost:8080/` to sign in.
+### Update the `oktaconfig.js` file
 
-#### Update the `oktaconfig.js` file:
+Replace the baseUrl, clientId, and issuer with your own values.
 
 ```javascript
 angular
@@ -30,6 +34,16 @@ angular
     'appointments:confirm'
   ]
 });
-
 ```
+
+## Start the Server
+
+```sh
+[acmehealth-spa]$ npm start
+```
+## Visit the Application:
+
+The [AcmeHealth Server](https://github.com/jmelberg/acmehealth-server) must be active for this application to function properly.
+
+**[Navigate](http://localhost:8080/)** to [http://localhost:8080/](http://localhost:8080/) to sign in.
 
