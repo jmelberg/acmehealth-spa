@@ -8,7 +8,7 @@ This is an Angular-based Single Page Application designed to work with the [Acme
 ```$ git clone git@github.com:jmelberg/acmehealth-spa.git```
   
 ### Install the Project
-[acmehealth-spa]$ npm install
+```$ npm install```
 
 ### Update the `oktaconfig.js` file
 
@@ -39,7 +39,7 @@ angular
 ## Start the Server
 
 ```sh
-[acmehealth-spa]$ npm start
+$ npm start
 ```
 ## Visit the Application:
 
